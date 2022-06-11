@@ -1,0 +1,11 @@
+Python is more sensitive about indentation.
+Indentation means a tabsize gap after the condition and looping branches
+and function , class etc
+Generally, Python by Default tabsize(\t) is 8
+But in IDE it shows like C/C++/Java By Default tabsize (\t) is 4
+
+e.g ----------------------->
+
+       for str.islower() == True
+            if True ==True
+                print("Something")
