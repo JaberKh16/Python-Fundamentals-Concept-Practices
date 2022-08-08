@@ -23,7 +23,7 @@
                     
 '''
 
-# Wage Count Function
+# wage_count function
 def wage_count(working_day):
     per_day_hours = 7  # 7 hours per day
     total_working_hours = per_day_hours * working_day # workng hours in a week  # 6 hours in a week and 1 day off 
@@ -31,16 +31,31 @@ def wage_count(working_day):
     print(f"Actual Wage Calculated is: {total_wage}")
     return total_wage
 
-# Bonus along with Wage Count
+# wage_bonus function
 def wage_bonus(total_wage):
     bonus = 500
     added_salary = wage_count(total_wage) + bonus # calling the wage_count() inside this function
     print(f"After added bonus : {added_salary}")
     return added_salary
 
-# Calling those function
+# calling those function
 wage_bonus(6) # passing the working day
 
 
+# another example
+def differentiate_max_min(lst):
+    # defining a function to find max number
+    def finding_max_number(lst):
+        return max(lst)
+    # defining a function to find max number
+    def finding_min_number(lst):
+        return min(lst)
+    # invoking both of the functions
+    max_num = finding_max_number(lst)
+    min_num = finding_min_number(lst)
+
+    return (max_num, min_num)
+
+print(differentiate_max_min([10, 4, 1, 4, -10, -50, 32, 21]))
 
 
