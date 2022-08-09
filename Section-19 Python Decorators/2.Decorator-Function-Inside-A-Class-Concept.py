@@ -9,11 +9,11 @@
     
     For Example-
     >>> class ClassName:
-            def __init__(self, val):
-                self.val = val
+            def __init__(self, var):
+                self.var = var
             @property
             def function_name(self):
-                return val
+                return var
                 
     That 'property' decorator accepted a function but it didn't return a 
     function, it returned a property object instead-
@@ -31,6 +31,10 @@
     using a class under the hood). But the thing we care about is that it's 
     a callable that accepts a function, so we can use it the same way as 
     any other decorator.
+    
+    A decorator is a callable (usually a function though sometimes a class) 
+    that accepts either a function or a class and returns a new function 
+    or class that wraps around the original one.
 
 '''
 
